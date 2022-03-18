@@ -1,13 +1,54 @@
-function isPalindrome(word) {
+function isPalindrome(string) {
   // Write your algorithm here
+
+  // const len = word.length;
+
+  // for (let i = 0; i < len/2; i++) {
+  //   if (word[i] !== word[len - 1 - i]) {
+  //     return false;
+  //   }
+
+  //   return true;
+  // }
+
+  // isPalindrome("");
+
+
+const arrayValue = string.split('');
+
+const reverseArrayValue = arrayValue.reverse();
+
+const reverseString = reverseArrayValue.join('');
+
+if (string == reverseString) {
+  return true
 }
+else {
+  return false
+}
+}
+
+isPalindrome('racecar')
 
 /* 
   Add your pseudocode here
+  function isPalindrome(word) {
+    if (word == palindrome)
+      return true;
+    if (word != palindrome)
+      return false;
+
+    let palindrome = () => 
+
+  }
 */
 
 /*
   Add written explanation of your solution here
+  pass in a string word to the function
+  if the word is a palindrome return true
+  if the word is not return false
+  create a variable called palindrome that defines what a palindrome is
 */
 
 // You can run `node index.js` to view these console logs
